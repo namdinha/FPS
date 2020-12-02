@@ -18,8 +18,8 @@ public class Weapon : MonoBehaviour {
     private void Shoot() {
         RaycastHit hit;
         if(Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range)) {
-            Debug.Log(hit.transform.name);
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
+            if (target == null) { return; }
             target.TakeDamage(damage);
         }
     }
