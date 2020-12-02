@@ -1198,6 +1198,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1364400661}
+    - target: {fileID: 3013861282793614382, guid: 331ad179b904d094ea5b21bd3d4e9747,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 331ad179b904d094ea5b21bd3d4e9747, type: 3}
 --- !u!1001 &4380133414244211691
@@ -1267,11 +1272,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4380133415598218714, guid: f10b98fe82876444cb34c810ac70c569,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000,
-        type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f10b98fe82876444cb34c810ac70c569, type: 3}
