@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour {
     public void TakeDamage(float damage) {
         health -= damage;
         if(health <= 0) {
-            print("YOU DIED");
+            GetComponent<DeathHandler>().HandleDeath();
         }
     }
 }
