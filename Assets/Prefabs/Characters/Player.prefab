@@ -496,6 +496,16 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 2118777018}
+    - target: {fileID: 4822627435317346140, guid: f7f7e1579e68a2a4bb00dbd8b9a54d6d,
+        type: 3}
+      propertyPath: damage
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822627435317346140, guid: f7f7e1579e68a2a4bb00dbd8b9a54d6d,
+        type: 3}
+      propertyPath: timeBetweenShots
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7433248799104986203, guid: f7f7e1579e68a2a4bb00dbd8b9a54d6d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -581,6 +591,16 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 2118777018}
+    - target: {fileID: 4822627435317346140, guid: 8ca5af55efb8756488743f89ec9b124e,
+        type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822627435317346140, guid: 8ca5af55efb8756488743f89ec9b124e,
+        type: 3}
+      propertyPath: timeBetweenShots
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7433248799104986203, guid: 8ca5af55efb8756488743f89ec9b124e,
         type: 3}
       propertyPath: m_LocalPosition.x
