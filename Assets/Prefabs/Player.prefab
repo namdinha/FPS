@@ -180,6 +180,8 @@ GameObject:
   - component: {fileID: 4380133415603617468}
   - component: {fileID: 4380133415593369212}
   - component: {fileID: 4380133415591127096}
+  - component: {fileID: 1364493874}
+  - component: {fileID: 1364493878}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -301,6 +303,32 @@ MonoBehaviour:
     slowDownRate: 20
     airControl: 0
     shellOffset: 0
+--- !u!114 &1364493874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4380133415598218714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 021a89337852ae849843517a77438436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!114 &1364493878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4380133415598218714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d8e71922e30c641a29fdd7a34c1f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
 --- !u!114 &1365528882
 MonoBehaviour:
   m_ObjectHideFlags: 0

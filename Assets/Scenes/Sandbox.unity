@@ -1690,38 +1690,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4380133414244211691}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1364493873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4380133415598218714, guid: f10b98fe82876444cb34c810ac70c569,
-    type: 3}
-  m_PrefabInstance: {fileID: 4380133414244211691}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1364493874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1364493873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 021a89337852ae849843517a77438436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
---- !u!114 &1364493878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1364493873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70d8e71922e30c641a29fdd7a34c1f5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 106833535}
 --- !u!1 &1387954552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2745,6 +2713,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1364493878, guid: f10b98fe82876444cb34c810ac70c569, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 106833535}
     - target: {fileID: 4380133415598113278, guid: f10b98fe82876444cb34c810ac70c569,
         type: 3}
       propertyPath: m_LocalPosition.x
