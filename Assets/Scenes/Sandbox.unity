@@ -2717,6 +2717,11 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 106833535}
+    - target: {fileID: 1189448982426926334, guid: f10b98fe82876444cb34c810ac70c569,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4380133415598113278, guid: f10b98fe82876444cb34c810ac70c569,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2776,6 +2781,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593383119927894874, guid: f10b98fe82876444cb34c810ac70c569,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151958992100897885, guid: f10b98fe82876444cb34c810ac70c569,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117026275758111610, guid: f10b98fe82876444cb34c810ac70c569,
+        type: 3}
+      propertyPath: timeBetweenShots
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f10b98fe82876444cb34c810ac70c569, type: 3}
