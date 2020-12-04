@@ -2558,6 +2558,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1939275563}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2118777017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4380133415598218714, guid: f10b98fe82876444cb34c810ac70c569,
+    type: 3}
+  m_PrefabInstance: {fileID: 4380133414244211691}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2118777018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118777017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10150485da198cb4faf0dc6a5b455bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 10
 --- !u!1001 &2125013333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2717,6 +2736,10 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 106833535}
+    - target: {fileID: 1365528882, guid: f10b98fe82876444cb34c810ac70c569, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 2118777018}
     - target: {fileID: 4380133415598113278, guid: f10b98fe82876444cb34c810ac70c569,
         type: 3}
       propertyPath: m_LocalPosition.x
