@@ -360,7 +360,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10150485da198cb4faf0dc6a5b455bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 10
+  - ammoType: 1
+    ammoAmount: 10
+  - ammoType: 2
+    ammoAmount: 10
 --- !u!1 &5610241591063277438
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5171566115821637457}
+  - component: {fileID: 866031324}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -394,6 +401,19 @@ Transform:
   m_Father: {fileID: 4380133415598113276}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866031324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5610241591063277438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a47c4dcebbe5ec4a87df72a096b6775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!1001 &3078074239240114977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -496,16 +516,6 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 2118777018}
-    - target: {fileID: 4822627435317346140, guid: f7f7e1579e68a2a4bb00dbd8b9a54d6d,
-        type: 3}
-      propertyPath: damage
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 4822627435317346140, guid: f7f7e1579e68a2a4bb00dbd8b9a54d6d,
-        type: 3}
-      propertyPath: timeBetweenShots
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7433248799104986203, guid: f7f7e1579e68a2a4bb00dbd8b9a54d6d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -591,16 +601,6 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 2118777018}
-    - target: {fileID: 4822627435317346140, guid: 8ca5af55efb8756488743f89ec9b124e,
-        type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4822627435317346140, guid: 8ca5af55efb8756488743f89ec9b124e,
-        type: 3}
-      propertyPath: timeBetweenShots
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7433248799104986203, guid: 8ca5af55efb8756488743f89ec9b124e,
         type: 3}
       propertyPath: m_LocalPosition.x
