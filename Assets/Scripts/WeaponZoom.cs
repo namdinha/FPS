@@ -21,16 +21,24 @@ public class WeaponZoom : MonoBehaviour {
     void Update() {
         if(Input.GetMouseButtonDown(1)) {
             if(zoomedInToggle == false) {
-                zoomedInToggle = true;
-                FPCamera.fieldOfView = zoomedInFOV;
-                SetSenitivity(sensitivityIn);
+                ZoomIn();
             }
             else {
-                zoomedInToggle = false;
-                FPCamera.fieldOfView = zoomedOutFOV;
-                SetSenitivity(sensitivityOut);
+                ZoomOut();
             }
         }
+    }
+
+    private void ZoomOut() {
+        zoomedInToggle = false;
+        FPCamera.fieldOfView = zoomedOutFOV;
+        SetSenitivity(sensitivityOut);
+    }
+
+    private void ZoomIn() {
+        zoomedInToggle = true;
+        FPCamera.fieldOfView = zoomedInFOV;
+        SetSenitivity(sensitivityIn);
     }
 
     private void SetSenitivity(float amount) {
@@ -39,8 +47,6 @@ public class WeaponZoom : MonoBehaviour {
     }
 
     void OnDisable() {
-        zoomedInToggle = false;
-        FPCamera.fieldOfView = zoomedOutFOV;
-        SetSenitivity(sensitivityOut);
+        ZoomOut();
     }
 }
