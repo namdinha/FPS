@@ -6,11 +6,23 @@ public class EnemyHealth : MonoBehaviour {
 
     [SerializeField] float hitPoints = 100f;
 
+    bool isDead = false;
+
     public void TakeDamage(float damage) {
         BroadcastMessage("OnDamageTaken");
         hitPoints -= damage;
         if(hitPoints <= 0f) {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die() {
+        if(isDead) { return; }
+        isDead = true;
+        GetComponent<Animator>().enabled = false;
+    }
+
+    public bool IsDead() {
+        return isDead;
     }
 }

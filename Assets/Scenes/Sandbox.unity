@@ -1367,7 +1367,7 @@ PrefabInstance:
     - target: {fileID: 3262684022425933484, guid: 5ba7d61869d5ff34caa7bce394126fcd,
         type: 3}
       propertyPath: m_Name
-      value: Ammo Pickup (2)
+      value: Rockets Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 3262684022425933486, guid: 5ba7d61869d5ff34caa7bce394126fcd,
         type: 3}
@@ -2681,7 +2681,7 @@ PrefabInstance:
     - target: {fileID: 3262684022425933484, guid: 5ba7d61869d5ff34caa7bce394126fcd,
         type: 3}
       propertyPath: m_Name
-      value: Ammo Pickup (1)
+      value: Shells Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 3262684022425933486, guid: 5ba7d61869d5ff34caa7bce394126fcd,
         type: 3}
@@ -2915,7 +2915,7 @@ PrefabInstance:
     - target: {fileID: 3262684022425933484, guid: 5ba7d61869d5ff34caa7bce394126fcd,
         type: 3}
       propertyPath: m_Name
-      value: Ammo Pickup
+      value: Bullets Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 3262684022425933487, guid: 5ba7d61869d5ff34caa7bce394126fcd,
         type: 3}
