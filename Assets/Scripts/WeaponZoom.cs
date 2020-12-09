@@ -15,7 +15,7 @@ public class WeaponZoom : MonoBehaviour {
     RigidbodyFirstPersonController FPController;
 
     void Start() {
-        FPController = GetComponent<RigidbodyFirstPersonController>();
+        FPController = GetComponentInParent<RigidbodyFirstPersonController>();
     }
 
     void Update() {
@@ -36,5 +36,11 @@ public class WeaponZoom : MonoBehaviour {
     private void SetSenitivity(float amount) {
         FPController.mouseLook.XSensitivity = amount;
         FPController.mouseLook.YSensitivity = amount;
+    }
+
+    void OnDisable() {
+        zoomedInToggle = false;
+        FPCamera.fieldOfView = zoomedOutFOV;
+        SetSenitivity(sensitivityOut);
     }
 }
