@@ -44,7 +44,9 @@ public class Weapon : MonoBehaviour {
     private void ProcessRaycast() {
         RaycastHit hit;
         if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range)) {
-            hit.collider.isTrigger = true;
+            if(hit.collider.gameObject.tag == "Enemy") {
+                hit.collider.isTrigger = true;
+            }
             CreateHitImpact(hit);
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
             if (target == null) { return; }

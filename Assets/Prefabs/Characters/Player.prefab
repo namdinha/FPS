@@ -362,11 +362,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoSlots:
   - ammoType: 0
-    ammoAmount: 20
+    ammoAmount: 30
   - ammoType: 1
-    ammoAmount: 10
-  - ammoType: 2
     ammoAmount: 20
+  - ammoType: 2
+    ammoAmount: 30
 --- !u!1 &4748266102584110175
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +472,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e99df51431d4f3d4280fadfbfa0beeee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightDecay: 0.1
+  angleDecay: 1
+  minimumAngle: 40
 --- !u!114 &2743609369477300169
 MonoBehaviour:
   m_ObjectHideFlags: 0
