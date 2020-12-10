@@ -14,10 +14,16 @@ public class Weapon : MonoBehaviour {
     [SerializeField] AmmoType ammoType;
     [SerializeField] float timeBetweenShots = 0.5f;
 
+    PlayerInfoUIHandler UIcanvas;
     bool canShoot = true;
+
+    void Awake() {
+        UIcanvas = FindObjectOfType<PlayerInfoUIHandler>();
+    }
 
     void OnEnable() {
         canShoot = true;
+        UIcanvas.UpdateAmmoDisplay(ammoSlot.GetCurrentAmmo(ammoType));
     }
 
     void Update() {
@@ -32,6 +38,7 @@ public class Weapon : MonoBehaviour {
             ammoSlot.DecreaseCurrentAmmo(ammoType);
             PlayMuzzleFlash();
             ProcessRaycast();
+            UIcanvas.UpdateAmmoDisplay(ammoSlot.GetCurrentAmmo(ammoType));
         }
         yield return new WaitForSeconds(timeBetweenShots);
         canShoot = true;

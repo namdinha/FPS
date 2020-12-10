@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
-    [SerializeField] float health = 100f;
+    [SerializeField] int health = 100;
 
-    public void TakeDamage(float damage) {
+    PlayerInfoUIHandler UIHandler;
+
+    void Start() {
+        UIHandler = FindObjectOfType<PlayerInfoUIHandler>();
+        UIHandler.UpdateHealthDisplay(health);
+    }
+
+    public void TakeDamage(int damage) {
         health -= damage;
+        UIHandler.UpdateHealthDisplay(health);
         if(health <= 0) {
             GetComponent<DeathHandler>().HandleDeath();
         }
