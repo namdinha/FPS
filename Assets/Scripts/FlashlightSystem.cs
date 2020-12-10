@@ -27,4 +27,12 @@ public class FlashlightSystem : MonoBehaviour {
     private void DecreaseLightAngle() {
         myLight.spotAngle = Math.Max(minimumAngle, myLight.spotAngle - angleDecay * Time.deltaTime);
     }
+
+    public void RestoreLightAngle(float restoreAngle) {
+        myLight.spotAngle = restoreAngle;
+    }
+
+    public void AddLightIntensity(float intensityAmount) {
+        myLight.intensity += intensityAmount;
+    }
 }
