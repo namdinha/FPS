@@ -4497,6 +4497,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shells Pickup
       objectReference: {fileID: 0}
+    - target: {fileID: 3262684022425933486, guid: 5ba7d61869d5ff34caa7bce394126fcd,
+        type: 3}
+      propertyPath: amount
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3262684022425933487, guid: 5ba7d61869d5ff34caa7bce394126fcd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5907,6 +5912,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ammo
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262684022425933486, guid: 5ba7d61869d5ff34caa7bce394126fcd,
+        type: 3}
+      propertyPath: amount
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3262684022425933487, guid: 5ba7d61869d5ff34caa7bce394126fcd,
         type: 3}

@@ -8694,7 +8694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammo: 1
-  amount: 5
+  amount: 20
 --- !u!65 &9141647982372594611
 BoxCollider:
   m_ObjectHideFlags: 0
