@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.03924131, g: 0.051416866, b: 0.09406138, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2242,7 +2242,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.6838e-41, y: 1.04e-43, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -6006,6 +6006,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bullets Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262684022425933486, guid: 5ba7d61869d5ff34caa7bce394126fcd,
+        type: 3}
+      propertyPath: ammo
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3262684022425933487, guid: 5ba7d61869d5ff34caa7bce394126fcd,
         type: 3}
